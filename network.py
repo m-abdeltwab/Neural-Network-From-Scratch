@@ -20,7 +20,7 @@ class NeuralNetwork:
         )
 
         # Given custom activation function:
-        self.activation_function = lambda x: 1 / (x + np.exp(-x))
+        self.activation_function = lambda x: 1 / (1 + np.exp(-x))
 
     def activation_derivative(self, x):
         # Compute the activation once, then use it to find the derivative
